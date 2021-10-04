@@ -3,9 +3,10 @@ import {
   OnInit,
   ChangeDetectionStrategy,
   forwardRef,
+  Injectable,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-
+@Injectable({ providedIn: 'root' })
 @Component({
   selector: 'app-input',
   templateUrl: './input.component.html',
@@ -20,9 +21,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   ],
 })
 export class InputComponent implements ControlValueAccessor {
-  // Function to call when the rating changes.
   onChange = (value: any) => {};
-  // Function to call when the input is touched (when a star is clicked).
   onTouched = () => {};
   value: any;
 

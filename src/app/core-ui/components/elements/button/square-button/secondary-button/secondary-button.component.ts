@@ -6,7 +6,7 @@ import { SquareButtonComponent } from '../square-button.component';
 @Component({
   selector: 'app-secondary-button',
   templateUrl: './secondary-button.component.html',
-  styleUrls: ['./secondary-button.component.css'],
+  styleUrls: ['./secondary-button.component.scss'],
 })
 export class SecondaryButtonComponent extends ButtonChildComponent<SquareButtonTypes> {
   constructor(@Inject(SquareButtonComponent) parent: SquareButtonComponent) {

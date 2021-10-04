@@ -1,0 +1,11 @@
+<div style="border:2px red dashed">
+    <span (click)='toggleDropdown()' style="border:2px blue dashed;width: 100% !important;display: flex;">main
+        item</span>
+    <ng-container *ngIf='isDropdownOpened'>
+        <ul>
+            <li (click)='onSelect(item.title)' *ngFor='let item of contentChildren'>
+                {{item.title}}
+            </li>
+        </ul>
+    </ng-container>
+</div>

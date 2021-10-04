@@ -1,5 +1,13 @@
 <app-square-button>hello</app-square-button>
 <app-square-button [buttonType]="'Primary'">hello</app-square-button>
 <app-square-button [buttonType]="'Secondary'">hello</app-square-button>
-
 <app-textarea [formControl]='formControl'></app-textarea>
+<!-- <app-input [formControl]='formControl'></app-input> -->
+<br>
+
+<app-select [formControl]='formControl'>
+    <app-option [title]='"title"'></app-option>
+    <app-option [title]='"titasle"'></app-option>
+    <app-option [title]='"tiastle"'></app-option>
+    <app-option [title]='"tdasitle"'></app-option>
+</app-select>
