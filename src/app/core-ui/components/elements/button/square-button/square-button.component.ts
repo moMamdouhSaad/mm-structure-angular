@@ -5,7 +5,7 @@ import { SquareButtonTypes } from './square-button-types';
 @Component({
   selector: 'app-square-button',
   templateUrl: './square-button.component.html',
-  styleUrls: ['./square-button.component.css'],
+  styleUrls: ['./square-button.component.scss'],
 })
 export class SquareButtonComponent
   extends ButtonParentComponent<SquareButtonTypes>
