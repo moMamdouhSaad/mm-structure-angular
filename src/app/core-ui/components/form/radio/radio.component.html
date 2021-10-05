@@ -1,0 +1,5 @@
+<label class="container">
+    <ng-content></ng-content>
+    <input type="radio" [value]="value" [name]="name" (change)='radioButtonChange($event)' [checked]="checked">
+    <span class="checkmark"></span>
+</label>

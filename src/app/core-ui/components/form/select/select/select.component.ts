@@ -49,7 +49,7 @@ export class SelectComponent implements ControlValueAccessor {
   registerOnTouched(fn: any): void {
     this.onTouched = fn;
   }
-  onSelect(value: any) {
+  onSelect(value: any):void {
     this.onChange(value);
   }
 
