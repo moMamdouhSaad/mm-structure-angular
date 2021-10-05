@@ -1,0 +1,16 @@
+@import './_variables.scss';
+@import './_functions.scss';
+
+.header-1 {
+    font-size: size(20);
+    font-weight: $font-bold;
+}
+
+.header-2 {
+    font-size: size(22);
+    font-weight: $font-bold;
+}
+
+.text-20 {
+    font-size: size(20);
+}

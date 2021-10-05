@@ -1,0 +1,6 @@
+/* Size Function */
+@function size($pixels) {
+    $rems: $pixels / 16;
+    @return #{$rems}rem;
+}
+/* END */
