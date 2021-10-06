@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-
 @Component({
   template: '',
 })
@@ -10,9 +9,11 @@ export abstract class ButtonParentComponent<ButtonTypes = any> {
   @Input() public text = '';
   @Input() public disabled = false;
   @Input() public buttonStyle!: { [key: string]: string };
-  @Input() public buttonClass!: { [key: string]: boolean };
+  @Input() public buttonClass: { [key: string]: boolean };
   @Output() public clicked = new EventEmitter<void>();
-
+  constructor() {
+    this.buttonClass = { 'mm-btn': true };
+  }
   public onClick() {
     if (!this.disabled) {
       this.clicked.emit();
