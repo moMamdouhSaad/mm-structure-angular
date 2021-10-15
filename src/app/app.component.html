@@ -21,11 +21,7 @@
 </app-select>
 <br />
 
-<app-checkbox
-  [formControl]="formControl"
-  [value]="'test value'"
-  [checked]="true"
->
+<app-checkbox [formControl]="formControl" [value]="'test value'" [checked]="true">
   test
 </app-checkbox>
 
@@ -35,19 +31,19 @@
   second value
 </app-checkbox>
 
-<app-radio [formControl]="formControl" [value]="'val1'" [name]="'hii'"
-  >Hello</app-radio
->
-<app-radio [name]="'hii'" [formControl]="formControl" [value]="'val2'"
-  >Hello</app-radio
->
+<app-radio [formControl]="formControl" [value]="'val1'" [name]="'hii'">Hello</app-radio>
+<app-radio [name]="'hii'" [formControl]="formControl" [value]="'val2'">Hello</app-radio>
 <app-radio [name]="'hii2'">Hello</app-radio>
 <app-radio [name]="'hii2'">Hello</app-radio>
-<div style="height: 1900px">asd</div>
-<div
-  style="border: 2px red dashed"
-  (visibilityChange)="test($event)"
-  elementInView
->
+
+<div style='height: 700px;'></div>
+<div style="height:200px">
+  <span *ngFor='let item of [].constructor(12)'>
+    <app-image [src]="'https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg'"></app-image>
+
+  </span>
+
+</div>
+<div style="border: 2px red dashed" (visibilityChange)="test($event)" elementInView>
   sadasdas
 </div>

@@ -4,3 +4,15 @@
     @return #{$rems}rem;
 }
 /* END */
+
+/* Size aspectRatio */
+@function aspectRatio($width, $height) {
+    @return math.div($height, $width) * 100%;
+}
+/* END */
+
+/* Size rem */
+@function rem($size) {
+    @return math.div($size, 12px) * 1rem;
+}
+/* Size rem */

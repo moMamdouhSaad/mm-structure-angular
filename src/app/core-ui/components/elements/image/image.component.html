@@ -1,0 +1,11 @@
+<div class="appImage" [ngClass]="ratio">
+  asdas
+  <img [defaultImage]="src" (error)="onImgError($event)" [lazyLoad]="src" [alt]="alt" />
+</div>
+
+<!-- 
+
+ [ngClass]="ratio"
+ &.is-2-1 {
+    padding-top: aspectRatio(2, 1);
+  } -->
