@@ -1,0 +1,22 @@
+<ng-container [ngSwitch]="appearance">
+
+
+    <ng-container *ngSwitchCase="'square'">
+        <ngx-skeleton-loader [animation]="animation" appearance="circle" [theme]="{
+    width: '100%',
+    height: '100%',
+    'border-radius': borderRadius
+  }"></ngx-skeleton-loader>
+
+    </ng-container>
+
+    <ng-container *ngSwitchCase="'line'">
+        <ngx-skeleton-loader [animation]="animation" appearance="line" [theme]="{
+    height: '100%',
+    'border-radius': '0'
+  }"></ngx-skeleton-loader>
+
+
+    </ng-container>
+
+</ng-container>

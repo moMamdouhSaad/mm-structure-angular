@@ -36,9 +36,18 @@
 <app-radio [name]="'hii2'">Hello</app-radio>
 <app-radio [name]="'hii2'">Hello</app-radio>
 
-<div style='height: 700px;'></div>
-<div style="height:200px">
-  <span *ngFor='let item of [].constructor(12)'>
+
+<div style='height:50px;'>
+  <app-placeholder [appearance]='"line"'></app-placeholder>
+</div>
+
+<div style='height:200px;width:100px'>
+  <app-placeholder [appearance]='"square"'></app-placeholder>
+</div>
+
+
+<div style="height:200px;border:2px bue dashed">
+  <span *ngFor='let item of [].constructor(3)'>
     <app-image [src]="'https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832_960_720.jpg'"></app-image>
 
   </span>

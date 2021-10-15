@@ -6,6 +6,7 @@ import { SelectModule } from './components/form/select/select.module';
 import { ElementInViewDirective } from './directives/elementInView.directive';
 import { ImageComponent } from './components/elements/image/image.component';
 import { LazyLoadImageModule } from 'ng-lazyload-image';
+import { PlacehoderModule } from './components/elements/placehoder/placehoder.module';
 
 @NgModule({
   declarations: [ElementInViewDirective, ImageComponent],
@@ -14,6 +15,7 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
     SquareButtonModule,
     FormModule,
     SelectModule,
+    PlacehoderModule,
     ElementInViewDirective,
     ImageComponent,
   ],
