@@ -1,38 +1,53 @@
 <app-square-button>hello</app-square-button>
-<br>
+<br />
 
 <app-square-button [buttonType]="'Primary'">hello</app-square-button>
-<br>
+<br />
 
 <app-square-button [buttonType]="'Secondary'">hello</app-square-button>
-<br>
+<br />
 
-<app-textarea [formControl]='formControl'></app-textarea>
-<br>
+<app-textarea [formControl]="formControl"></app-textarea>
+<br />
 
-<app-input [formControl]='formControl'></app-input>
-<br>
+<app-input [formControl]="formControl"></app-input>
+<br />
 
-<app-select [formControl]='formControl'>
-    <app-option [title]='"title"'></app-option>
-    <app-option [title]='"titasle"'></app-option>
-    <app-option [title]='"tiastle"'></app-option>
-    <app-option [title]='"tdasitle"'></app-option>
+<app-select [formControl]="formControl">
+  <app-option [title]="'title'"></app-option>
+  <app-option [title]="'titasle'"></app-option>
+  <app-option [title]="'tiastle'"></app-option>
+  <app-option [title]="'tdasitle'"></app-option>
 </app-select>
-<br>
+<br />
 
-<app-checkbox [formControl]='formControl' [value]="'test value'" [checked]='true'>
-    test
+<app-checkbox
+  [formControl]="formControl"
+  [value]="'test value'"
+  [checked]="true"
+>
+  test
 </app-checkbox>
 
-<br>
+<br />
 
-<app-checkbox [formControl]='formControl' [value]="'seoncd value'">
-    second value
+<app-checkbox [formControl]="formControl" [value]="'seoncd value'">
+  second value
 </app-checkbox>
 
-
-<app-radio [formControl]='formControl' [value]="'val1'" [name]="'hii'">Hello</app-radio>
-<app-radio [name]="'hii'" [formControl]='formControl' [value]="'val2'">Hello</app-radio>
+<app-radio [formControl]="formControl" [value]="'val1'" [name]="'hii'"
+  >Hello</app-radio
+>
+<app-radio [name]="'hii'" [formControl]="formControl" [value]="'val2'"
+  >Hello</app-radio
+>
 <app-radio [name]="'hii2'">Hello</app-radio>
 <app-radio [name]="'hii2'">Hello</app-radio>
+<div style="height: 1900px">asd</div>
+<div
+  style="border: 2px red dashed"
+  (visibilityChange)="test($event)"
+  elementInView
+>
+  sadasdas
+</div>
