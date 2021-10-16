@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   Component,
-  OnInit,
   ChangeDetectionStrategy,
   Input,
   forwardRef,
@@ -21,12 +24,12 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   ],
 })
 export class CheckboxComponent implements ControlValueAccessor {
-  @Input() checked: boolean = false;
-  @Input() value: any;
-  onChange = (value: any) => {};
+  @Input() checked = false;
+  @Input() value: unknown;
+  onChange = (value: unknown) => {};
   onTouched = () => {};
 
-  writeValue(obj: any): void {}
+  writeValue(obj: unknown): void {}
   registerOnChange(fn: any): void {
     this.onChange = fn;
   }

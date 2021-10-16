@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 @Component({
   template: '',
@@ -17,6 +21,8 @@ export abstract class ButtonParentComponent<ButtonTypes = any> {
   public onClick() {
     if (!this.disabled) {
       this.clicked.emit();
+      // const p = "aasdasd";
+      const t = 'asdasdasdas';
     }
   }
 }

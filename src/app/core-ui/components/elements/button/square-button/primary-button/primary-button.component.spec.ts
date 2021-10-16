@@ -1,4 +1,3 @@
-/* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
@@ -11,9 +10,8 @@ describe('PrimaryButtonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PrimaryButtonComponent ]
-    })
-    .compileComponents();
+      declarations: [PrimaryButtonComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

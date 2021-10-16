@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 // https://medium.com/@mohammedalrowad/creating-a-generic-http-service-in-angular-7c8169abe863
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -14,7 +15,7 @@ export class BaseApiService implements RestApiMethods {
   // Post or Patch methods
   postOrPatch<returnType>(
     route: string,
-    data: any,
+    data: unknown,
     id: number | null = null,
     method: 'post' | 'patch' = 'post',
     qp: QueryParams = {}

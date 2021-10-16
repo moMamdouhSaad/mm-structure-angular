@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import {
   Component,
   Input,
@@ -11,15 +13,13 @@ import {
   templateUrl: './image.component.html',
   styleUrls: ['./image.component.scss'],
 })
-export class ImageComponent implements OnInit, OnChanges {
-  @Input() src: string = '/assets/images/default.jpg';
+export class ImageComponent implements  OnChanges {
+  @Input() src = '/assets/images/default.jpg';
 
   @Input() alt = 'Image';
   @Input() ratio = '';
 
-  constructor() {}
-
-  ngOnInit(): void {}
+  
   onImgError(event: any) {
     event.target.src = '/assets/images/default.jpg';
     //Do other stuff with the event.target

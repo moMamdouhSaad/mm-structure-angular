@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   Component,
-  OnInit,
   ChangeDetectionStrategy,
   HostListener,
   ElementRef,
@@ -10,7 +13,6 @@ import {
   Injectable,
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { InputComponent } from '../../input/input.component';
 import { OptionComponent } from '../option/option.component';
 @Injectable({ providedIn: 'root' })
 @Component({
@@ -27,9 +29,10 @@ import { OptionComponent } from '../option/option.component';
   ],
 })
 export class SelectComponent implements ControlValueAccessor {
-  isDropdownOpened: boolean = false;
+  isDropdownOpened = false;
   @ContentChildren(OptionComponent)
   contentChildren!: QueryList<OptionComponent>;
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
   onChange = (value: any) => {};
   onTouched = () => {};
   value: any;
@@ -49,7 +52,7 @@ export class SelectComponent implements ControlValueAccessor {
   registerOnTouched(fn: any): void {
     this.onTouched = fn;
   }
-  onSelect(value: any):void {
+  onSelect(value: any): void {
     this.onChange(value);
   }
 

@@ -12,8 +12,4 @@ export class AppComponent {
   constructor() {
     this.formControl.valueChanges.subscribe((data) => console.log(data));
   }
-
-  test(e: any) {
-    console.log(e);
-  }
 }

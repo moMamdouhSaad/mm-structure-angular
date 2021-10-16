@@ -1,6 +1,9 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   Component,
-  OnInit,
   ChangeDetectionStrategy,
   Input,
   forwardRef,
@@ -21,7 +24,7 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   ],
 })
 export class RadioComponent implements ControlValueAccessor {
-  @Input() checked: boolean = false;
+  @Input() checked = false;
   @Input() value: any;
   @Input() name!: string;
 

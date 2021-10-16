@@ -3,18 +3,9 @@ import { CommonModule } from '@angular/common';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { PlaceholderComponent } from './placeholder/placeholder.component';
 
-
-
 @NgModule({
-  declarations: [
-    PlaceholderComponent
-  ],
-  imports: [
-    CommonModule,
-    NgxSkeletonLoaderModule
-  ],
-  exports: [
-    PlaceholderComponent
-  ]
+  declarations: [PlaceholderComponent],
+  imports: [CommonModule, NgxSkeletonLoaderModule],
+  exports: [PlaceholderComponent],
 })
-export class PlacehoderModule { }
+export class PlacehoderModule {}

@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/explicit-function-return-type */
 import {
   AfterViewInit,
   Directive,
@@ -25,13 +28,12 @@ export class ElementInViewDirective implements AfterViewInit, OnDestroy {
     this._observer.observe(this._elementRef.nativeElement);
   }
 
-  ngOnDestroy() {
+  ngOnDestroy():void {
     this._observer.disconnect();
   }
 
   private _callback = (entries: any, observer: any) => {
     entries.forEach((entry: any) => {
-      console.log('??');
       this.visibilityChange.emit(entry.isIntersecting ? 'VISIBLE' : 'HIDDEN');
     });
   };

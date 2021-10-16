@@ -1,5 +1,4 @@
 import { isNull } from '@angular/compiler/src/output/output_ast';
-import { QueryParamsHandling } from '@angular/router';
 
 /**
  * In the return we will attach the '?' if the user provides a query params
@@ -11,6 +10,7 @@ import { QueryParamsHandling } from '@angular/router';
  * this method will return ["userId=1", "name=rowad"]
  */
 export function correctFormatForQueryUrl(qp: QueryParams): string {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   if (isNull(qp as any)) {
     return '';
   }

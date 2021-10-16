@@ -5,14 +5,10 @@ import { PlaceHolderParentComponent } from '../placeholder-parent.component';
   selector: 'app-placeholder',
   templateUrl: './placeholder.component.html',
   styleUrls: ['./placeholder.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PlaceholderComponent extends PlaceHolderParentComponent {
-
-  constructor() { 
+  constructor() {
     super();
   }
-
- 
-
 }

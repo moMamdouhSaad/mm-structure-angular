@@ -1,6 +1,5 @@
-/* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { DefaultButtonComponent } from '@app/shared/buttons/square-button/default-button/default-button.component';
+import { DefaultButtonComponent } from './default-button.component';
 
 describe('PrimaryButtonComponent', () => {
   let component: DefaultButtonComponent;
@@ -8,9 +7,8 @@ describe('PrimaryButtonComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [DefaultButtonComponent]
-    })
-      .compileComponents();
+      declarations: [DefaultButtonComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {

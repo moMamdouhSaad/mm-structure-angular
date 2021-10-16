@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   ChangeDetectionStrategy,
   Input,
 } from '@angular/core';
@@ -11,9 +10,7 @@ import {
   styleUrls: ['./option.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class OptionComponent implements OnInit {
+export class OptionComponent  {
   @Input() title = 'title';
-  constructor() {}
 
-  ngOnInit(): void {}
 }

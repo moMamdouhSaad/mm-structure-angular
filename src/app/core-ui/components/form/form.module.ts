@@ -7,8 +7,18 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { RadioComponent } from './radio/radio.component';
 
 @NgModule({
-  declarations: [InputComponent, TextareaComponent, CheckboxComponent, RadioComponent],
+  declarations: [
+    InputComponent,
+    TextareaComponent,
+    CheckboxComponent,
+    RadioComponent,
+  ],
   imports: [CommonModule, ReactiveFormsModule, FormsModule],
-  exports: [InputComponent, TextareaComponent, CheckboxComponent, RadioComponent],
+  exports: [
+    InputComponent,
+    TextareaComponent,
+    CheckboxComponent,
+    RadioComponent,
+  ],
 })
 export class FormModule {}
