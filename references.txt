@@ -1,0 +1,13 @@
+
+
+Function Decleration
+/**
+ * Determines the amount of minutes the lasagna still needs to remain in the
+ * oven to be properly prepared.
+ *
+ * @param {number} actualMinutesInOven
+ * @returns {number} the number of minutes remaining
+ */
+export function remainingMinutesInOven(actualMinutesInOven):void {
+ return EXPECTED_MINUTES_IN_OVEN - actualMinutesInOven;
+}
